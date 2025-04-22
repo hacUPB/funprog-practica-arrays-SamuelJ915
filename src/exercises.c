@@ -103,7 +103,23 @@ int subtractArraysSum(int a[], int b[], int n)
 
 int mergeArraysSum(int a[], int n1, int b[], int n2)
 {
-    // Escriba aquí su código
+    
+        int total = 0;
+    
+        // Suma los elementos del primer arreglo
+        for (int i = 0; i < n1; i++) 
+        {
+            total += a[i];
+        }
+    
+        // Suma los elementos del segundo arreglo
+        for (int i = 0; i < n2; i++) 
+        {
+            total += b[i];
+        }
+    
+        return total;
+    
 }
 
 int productArray(int arr[], int n)
