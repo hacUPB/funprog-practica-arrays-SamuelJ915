@@ -32,7 +32,16 @@ int findMax(int arr[], int n)
 
 float calcAverage(int arr[], int n)
 {
-    // Escriba aquí su código
+
+    if (n <= 0) return 0.0f; // Evitar división por cero
+    
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+        sum += arr[i]; // Sumamos todos los elementos
+    }
+    
+    return (float)sum / n; // Convertimos a float antes de dividir
+
 }
 
 int countEvens(int arr[], int n)
