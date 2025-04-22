@@ -90,7 +90,15 @@ int findMin(int arr[], int n)
 
 int subtractArraysSum(int a[], int b[], int n)
 {
-    // Escriba aquí su código
+    
+    int total = 0;
+        
+    for (int i = 0; i < n; i++) {
+        total += (a[i] - b[i]);  // Suma la diferencia de cada posición
+    }
+        
+    return total;
+    
 }
 
 int mergeArraysSum(int a[], int n1, int b[], int n2)
