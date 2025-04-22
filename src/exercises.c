@@ -20,7 +20,8 @@ int findMax(int arr[], int n)
 {
     int max = arr[0]; // Inicializamos max con el primer elemento del arreglo
     
-    for (int i = 1; i < n; i++) { // Iteramos desde el segundo elemento
+    for (int i = 1; i < n; i++) 
+    { // Iteramos desde el segundo elemento
         if (arr[i] > max) { // Si encontramos un valor mayor
             max = arr[i]; // Actualizamos max
         }
@@ -36,7 +37,8 @@ float calcAverage(int arr[], int n)
     if (n <= 0) return 0.0f; // Evitar división por cero
     
     int sum = 0;
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) 
+    {
         sum += arr[i]; // Sumamos todos los elementos
     }
     
@@ -46,7 +48,19 @@ float calcAverage(int arr[], int n)
 
 int countEvens(int arr[], int n)
 {
-    // Escriba aquí su código
+    
+    int count = 0; 
+        
+    for (int i = 0; i < n; i++) 
+    {
+         if (arr[i] % 2 == 0) 
+         { 
+            count++; 
+         }
+    }
+        
+    return count; 
+    
 }
 
 int sumFirstLast(int arr[], int n)
