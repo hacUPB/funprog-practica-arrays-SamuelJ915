@@ -73,7 +73,19 @@ int sumFirstLast(int arr[], int n)
 
 int findMin(int arr[], int n)
 {
-    // Escriba aquí su código
+    
+    if (n <= 0) return 0;  // Si el arreglo está vacio retorna 0
+        
+    int min = arr[0];  // Suponemos que el primer elemento es el menor
+        
+    for (int i = 1; i < n; i++) {  // Recorremos desde el segundo elemento
+        if (arr[i] < min) {  // Si encontramos un valor menor
+            min = arr[i];    // Actualizamos el menor
+        }
+    }
+        
+    return min;  // Retornamos el valor encontrado
+    
 }
 
 int subtractArraysSum(int a[], int b[], int n)
