@@ -65,7 +65,10 @@ int countEvens(int arr[], int n)
 
 int sumFirstLast(int arr[], int n)
 {
-    // Escriba aquí su código
+     
+    if (n <= 0) return 0;  // Si el arreglo está vacío, retorna 0
+    return arr[0] + arr[n - 1];  // Suma el primero y el último
+    
 }
 
 int findMin(int arr[], int n)
