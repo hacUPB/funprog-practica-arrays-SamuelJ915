@@ -124,7 +124,14 @@ int mergeArraysSum(int a[], int n1, int b[], int n2)
 
 int productArray(int arr[], int n)
 {
-    // Escriba aquí su código
+    int product = 1;  // Inicializamos con 1 (elemento neutro del producto)
+    
+    for (int i = 0; i < n; i++) {
+        product *= arr[i];  // Multiplicamos cada elemento
+    }
+    
+    return product;
+    
 }
 
 // -------------------------------
